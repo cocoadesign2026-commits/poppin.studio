@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join the Adventure | お問い合わせ</title>
+    <link rel="icon" href="images/p-newfavison (1).png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="poppin-page-header">
+      <a href="index.html">
+        <img
+          src="images/poppin'final.png"
+          alt="POPPIN'"
+          class="header-logo-image"
+        />
+      </a>
+    </header>
+
+    <main>
+      <div class="concept-section">
+        <p class="concept-subtitle">#04 【Contact — お問い合わせ】</p>
+        <h2 class="concept-title">一緒に、新しい冒険へ出かけよう！</h2>
+        <p class="concept-text">
+          お仕事のご依頼、コラボレーションの提案、あるいは「こんなワクワクすること思いついたよ！」というお話まで。<br />
+          同じ温度の美意識を持つあなたからの合図を、楽しみに待っています。
+        </p>
+      </div>
+
+      <!-- 💡可愛いポップなお問い合わせフォーム -->
+      <section
+        class="contact-form-wrapper"
+        style="
+          max-width: 600px;
+          margin: 0 auto;
+          background: white;
+          padding: 30px;
+          border-radius: 12px;
+          border: 2px solid #000;
+          box-shadow: 5px 5px 0px #000;
+        "
+      >
+        <form
+          action="#"
+          method="POST"
+          style="display: flex; flex-direction: column; gap: 20px"
+        >
+          <div>
+            <label style="display: block; font-weight: bold; margin-bottom: 8px"
+              >お名前</label
+            >
+            <input
+              type="text"
+              name="name"
+              placeholder="白瀬　唯"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #000;
+                border-radius: 6px;
+                box-sizing: border-box;
+              "
+              required
+            />
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: bold; margin-bottom: 8px"
+              >メールアドレス</label
+            >
+            <input
+              type="email"
+              name="email"
+              placeholder="example@poppin.com"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #000;
+                border-radius: 6px;
+                box-sizing: border-box;
+              "
+              required
+            />
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: bold; margin-bottom: 8px"
+              >どんな冒険の話？（メッセージ）</label
+            >
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="こちらにご依頼内容等お願いします"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #000;
+                border-radius: 6px;
+                box-sizing: border-box;
+                resize: vertical;
+              "
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="enter-button"
+            style="cursor: pointer; width: 100%; font-size: 16px"
+          >
+            送信する
+          </button>
+        </form>
+      </section>
+
+      <div style="text-align: center; margin-top: 50px">
+        <a href="index.html" class="enter-button">BACK TO POPPIN’</a>
+      </div>
+    </main>
+
+    <footer>&copy; 2026 POPPIN’. All rights reserved.</footer>
+  </body>
+</html>

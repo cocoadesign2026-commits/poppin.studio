@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWS | お知らせと企み</title>
+    <link rel="icon" href="images/p-newfavison (1).png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* 舞さんのExpeditionの可愛いトンマナに100%合わせたデザイン */
+      body {
+        background: #fff; /* しっかり白ベース */
+        color: #000;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      /* Expeditionのタイトル周りと完全に揃えた装飾 */
+      .news-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .news-subtitle {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #888;
+        margin: 0 0 5px 0;
+        letter-spacing: 0.05em;
+      }
+
+      .news-page-title {
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin: 0 0 15px 0;
+        letter-spacing: 0.05em;
+      }
+
+      .news-intro {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* 💡ニュースのリスト */
+      .news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      /* 💡これこれ！極太黒ボーダーとパキッとしたシャドウのカード！ */
+      .news-post {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        border: 2px solid #000;
+        box-shadow: 4px 4px 0px #000; /* このパキッとした影が最高に可愛い */
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      /* ちょっと押せる感（ホバー演出） */
+      .news-post:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0px #000;
+      }
+
+      /* 日付とカテゴリタグ */
+      .news-meta {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 0.85rem;
+        font-weight: bold;
+      }
+
+      .news-date {
+        color: #000;
+      }
+
+      /* タグのカラーもExpeditionのピンクとブルーに統一！ */
+      .news-tag {
+        color: #ff71ce; /* 記事1とおそろいのピンク */
+      }
+
+      .news-tag.event {
+        color: #5ce1e6; /* 記事2とおそろいのブルー（イベント用） */
+      }
+
+      /* ニュース本文 */
+      .news-post p {
+        line-height: 1.6;
+        margin: 15px 0 0 0;
+        color: #000;
+      }
+
+      /* ボタンの装飾（お持ちのenter-buttonクラスに合わせるか、これで） */
+      .back-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="poppin-page-header">
+      <a href="index.html">
+        <img src="images/news.png" alt="POPPIN'" class="header-logo-image" />
+      </a>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="news-header">
+          <p class="news-subtitle">#04 News</p>
+          <h2 class="news-page-title">秘密基地の最新ニュース。</h2>
+          <p class="news-intro">
+            この場所のアップデート情報や、これから仕掛けるワクワクな企みのお知らせです。
+          </p>
+        </div>
+
+        <div class="news-list">
+          <article class="news-post">
+            <div class="news-meta">
+              <span class="news-date">2026.06.18</span>
+              <span class="news-tag event">★ EVENT</span>
+            </div>
+            <h3 style="margin: 10px 0; color: #5ce1e6">
+              ☕️ いつか、小さなお茶会を開くなら。
+            </h3>
+            <p>
+              いつも「わくわくカプセル」に素敵なときめきを置いていってくれてありがとうございます。画面を飛び出して、みんなで好きなものを持ち寄ってゆるく喋れる小さなお茶会を、いつかリアルで企画できたらいいな…と企んでいます。その時はここで一番にお知らせしますね！
+            </p>
+          </article>
+
+          <article class="news-post">
+            <div class="news-meta">
+              <span class="news-date">2026.06.15</span>
+              <span class="news-tag">★ UPDATE</span>
+            </div>
+            <h3 style="margin: 10px 0; color: #ff71ce">
+              🌌 遠征記録（Expedition）に養老渓谷の動画を追加しました！
+            </h3>
+            <p>
+              #02
+              MyーExpeditionのページに、メンバーと一緒に出かけた夜の養老渓谷の動画を埋め込みました！自然とデジタルアートが混ざり合う、胸がパチパチ弾けたお気に入りの瞬間、ぜひ覗いてみてください✨
+            </p>
+          </article>
+        </div>
+
+        <div class="back-container">
+          <a href="index.html" class="enter-button">BACK TO POPPIN’</a>
+        </div>
+      </div>
+    </main>
+
+    <footer style="text-align: center; padding: 40px 0; font-size: 0.85rem">
+      &copy; 2026 POPPIN’. All rights reserved.
+    </footer>
+  </body>
+</html>
