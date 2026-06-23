@@ -1,4 +1,4 @@
-
+/* 👇これをcssの1番上に貼り付ける（可愛いフォントをネットから持ってくる魔法） */
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&display=swap");
 
 /* ==========================================================================
@@ -11,9 +11,10 @@
 }
 
 body {
- 
+  /* あさぎーにょさんの世界観のような、温かみのあるサイケなクリームホワイト */
+  /* ハートのオーロラ感を再現する魔法のグラデーション */
   background: linear-gradient(135deg, #98f5ed 0%, #ffb7e2 50%, #b57bee 100%);
-
+  /* 全体の文字は読みやすい、少しだけマイルドな濃いグレー */
   color: #2b2b2b;
   font-family: "Zen Maru Gothic", sans-serif;
   overflow-x: hidden;
@@ -22,7 +23,7 @@ body {
 }
 
 /* ==========================================================================
-   🖼️ POPPIN' 
+   🖼️ POPPIN' ヘッダーの配置設定（復活した黒枠を今度こそ完全消去！）
    ========================================================================== */
 .poppin-page-header {
   width: 100%;
@@ -34,14 +35,14 @@ body {
   justify-content: center;
   align-items: center;
 
-
+  /* 💡ヘッダーの上下左右にあるかもしれない線を「存在ごと」完全に消します */
   border: none !important;
   border-bottom: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
 
-
+/* 💡 ロゴ画像自体の黒枠を消し、さらに外側を1pxだけ削って線を消し去る */
 .header-logo-image {
   width: 100%;
   height: auto;
@@ -50,11 +51,13 @@ body {
   display: block;
   background: transparent !important;
 
-
+  /* 💡画像タグに紐づく線を完全リセット */
   border: 0 !important;
   outline: none !important;
 
- 
+  /* 💡【超強力な裏ワザ】
+     もし画像自体に黒い枠線が焼き付いてしまっている場合、
+     画像を「ほんの1%だけ拡大して、はみ出た1pxの枠線をカット」します！ */
   transform: scale(1.01);
   clip-path: inset(
     1px 1px 1px 1px
@@ -76,7 +79,7 @@ main {
   padding: 80px 20px;
 }
 
-
+/* 冒険の出発点（旧コンセプト） */
 .concept-section {
   text-align: center;
   margin-bottom: 100px;
@@ -84,7 +87,7 @@ main {
 
 .concept-subtitle {
   font-size: 1rem;
-
+  /* 旅の始まりを予感させる、爽快なミントグリーン！ */
   color: #00c2ff;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -96,7 +99,7 @@ main {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
-
+  /* ジューシーでパキッとしたビタミンピンク */
   color: #ff477e;
 }
 
@@ -114,7 +117,7 @@ main {
 .gallery-title {
   font-size: 1.4rem;
   font-weight: bold;
-
+  /* 爽やかなネオンブルーをアクセントに */
   color: #8efff5;
   margin-bottom: 40px;
   border-left: 4px solid #8efff5;
@@ -129,19 +132,19 @@ main {
 }
 
 .gallery-item {
-
+  /* ダークな暗闇から、おもちゃ箱のようなお菓子色のカードへ */
   background: #ffffff;
   border: 2px solid #2b2b2b;
-  border-radius: 12px; 
+  border-radius: 12px; /* 少し丸みを強めてポップに */
   padding: 24px;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   position: relative;
   cursor: pointer;
-
+  /* ポップな影（アメコミ風） */
   box-shadow: 4px 4px 0px #2b2b2b;
 }
 
-
+/* マウスを乗せると、飛び出すような楽しい動きに！ */
 .gallery-item:hover {
   transform: translate(-2px, -2px);
   box-shadow: 7px 7px 0px #ff477e;
@@ -162,7 +165,11 @@ main {
   margin-bottom: 8px;
 }
 
-
+/* ==========================================================================
+   🎪 探検隊の募集ラウンジ（旧シークレット・ラウンジ）
+   ========================================================================== */
+.lounge-section {
+  /* 暗闇グラデーションから、元気なひまわりイエローに */
   background: #ffffff;
   border: 2px solid #2b2b2b;
   border-radius: 16px;
@@ -177,7 +184,7 @@ main {
   font-size: 0.9rem;
   font-weight: bold;
   color: #ffffff;
-  background: #ff477e;
+  background: #ff477e; /* ピンクの風船みたいなタグ */
   padding: 8px 20px;
   border-radius: 20px;
   margin-bottom: 25px;
@@ -208,7 +215,7 @@ main {
   }
 }
 
-
+/* 💡 真面目すぎた文字を、極太丸ゴシック＆おもちゃっぽく！ */
 .lounge-text {
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 18px;
@@ -219,7 +226,7 @@ main {
   letter-spacing: 0.05em;
 }
 
-
+/* 💡 ボタンを完全に「ぷっくりカプセル型」に変身 */
 .lounge-section .enter-button {
   display: inline-block;
   font-family: "Zen Maru Gothic", sans-serif;
@@ -227,27 +234,27 @@ main {
   font-size: 20px;
   font-weight: 900;
   color: #000;
-  background: #8efff5;
+  background: #8efff5; /* 舞さんお気に入りの水色 */
   padding: 15px 45px;
   border: 3px solid #000;
-  border-radius: 40px;
+  border-radius: 40px; /* 完全に丸っこいカプセル型に */
   box-shadow: 4px 4px 0px #000;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
-
+/* 🚀 マウスを乗せたらネオンピンクになってキュッと沈む魔法 */
 .lounge-section .enter-button:hover {
-  background: #ff71ce !important; 
-  transform: translate(2px, 2px); 
-  box-shadow: 2px 2px 0px #000 !important;
+  background: #ff71ce !important; /* パチパチ弾けるネオンピンク！ */
+  transform: translate(2px, 2px); /* 実際に押したみたいに沈む */
+  box-shadow: 2px 2px 0px #000 !important; /* 影も連動して縮む */
 }
 
 /* ==========================================================================
    🖼️ 各サブページ共通（Art, Space, Contact）
    ========================================================================== */
 .sub-page {
-  background-color: #fffaf0; 
+  background-color: #fffaf0; /* 下層ページも明るいクリーム色で統一 */
 }
 
 .back-to-top a {
@@ -260,7 +267,7 @@ main {
   color: #ff477e;
 }
 
-
+/* タイトルと説明文のポップ化 */
 .art-page-title,
 .space-page-title,
 .contact-page-title {
@@ -282,7 +289,7 @@ main {
   color: #444;
 }
 
-
+/* アートカード（ギャラリーページ用） */
 .art-card {
   background: #ffffff;
   border: 2px solid #2b2b2b;
@@ -290,7 +297,7 @@ main {
   box-shadow: 5px 5px 0px #2b2b2b;
 }
 
-/* 入力フォーム */
+/* 入力フォームのポップ化 */
 .contact-form-area {
   background: #ffffff;
   border: 2px solid #2b2b2b;
@@ -312,7 +319,7 @@ main {
   box-shadow: 0 0 0 3px rgba(255, 71, 126, 0.2);
 }
 
-
+/* 画像がぴったり収まる設定（引き継ぎ） */
 .art-gallery-image,
 .space-gallery-image {
   width: 100%;
@@ -321,7 +328,7 @@ main {
   display: block;
 }
 
-
+/* 🖼️ 今回追加してくれた記述のポップ調整 */
 img {
   max-width: 100%;
   height: auto;
@@ -341,7 +348,7 @@ footer {
   border-top: 2px solid #2b2b2b;
   background-color: #2b2b2b;
 }
-
+/* 💡 ギャラリー詳細ページの画像設定（本来の比率で全体を見せる！） */
 .gallery-item-detail {
   background: white;
   padding: 15px;
@@ -360,9 +367,9 @@ footer {
   border-radius: 8px;
   border: 1px solid #eee;
 
-
-  aspect-ratio: auto;
-  object-fit: contain; 
+  /* 💡ここを修正！ */
+  aspect-ratio: auto; /* 👈 正方形(1/1)の固定を解除して、画像本来の比率にします */
+  object-fit: contain; /* 👈 画像が切り取られず、全体が枠の中に綺麗に収まるようにします */
 }
 
 .art-title {
